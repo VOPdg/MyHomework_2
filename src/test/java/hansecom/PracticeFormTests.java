@@ -23,6 +23,7 @@ public class PracticeFormTests {
     @Test
     void successTest() {
         open("https://demoqa.com/automation-practice-form");
+        $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
 
         $("#firstName").setValue("Veronika");
         $("#lastName").setValue("Padgok");
